@@ -16,16 +16,7 @@
             XHR1.send();
 
             function select_meme(){
-                var XHR2 = new XMLHttpRequest();
-                XHR2.onreadystatechange = function() {
-                    if (XHR2.readyState == 4) {
-                        if (XHR2.status == 200) {
-                            document.getElementById("meme-view").innerHTML = XHR2.response;
-                        }
-                    }
-                }
-            XHR2.open("GET", "memes/" + Math.floor((Math.random() * 28) + 1) + ".png");
-            XHR2.send();
+                document.getElementById("meme-view").src = "memes/" + Math.floor((Math.random() * 100) + 1) + ".png";
             }
         </script>
         <style>
@@ -43,9 +34,7 @@
         <br>
         <br>
         <br>
-        <div id="meme-view">
-            Click the button below to see a random meme!
-        </div>
+        <img src="" id="meme-view">
         <br>
         <button onclick="select_meme()">SELECT RANDOM MEME</button>
     </body>
