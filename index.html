@@ -2,11 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>test</title>
+        <title>Home</title>
+        <script>
+            var XHR1 = new XMLHttpRequest();
+            XHR1.onreadystatechange = function() {
+            if (XHR1.readyState == 4) {
+                if (XHR1.status == 200) {
+                    document.getElementById("navbox").innerHTML = XHR1.responseText;
+                    }
+                }
+            }
+            XHR1.open("GET", "/navbox.html");
+            XHR1.send();
+        </script>
+        <style>
+            h1 {color:blue}
+            #navbox {border:2px}
+        </style>
     </head>
     <body>
         <h1>
-            This is a test.
+            Home
         </h1>
+        <div id="navbox" class="navbox">
+            Loading...
+        </div>
     </body>
 </html>
