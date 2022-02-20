@@ -21,12 +21,12 @@
                 XHR1.onreadystatechange = function() {
                     if (XHR1.readyState == 4) {
                         if (XHR1.status == 200) {
-                            document.getElementById("meme-view").innerHTML = "memes/" + XHR1.responseText + ".png";
+                            document.getElementById("meme-view").innerHTML = XHR1.responseText;
                         }
                     }
                 }
             }
-            XHR1.open("GET", "/navbox.html");
+            XHR1.open("GET", "memes/" + x + ".png");
             XHR1.send();
         </script>
         <style>
