@@ -16,18 +16,17 @@
             XHR1.send();
 
             function select_meme(){
-                let x = Math.floor((Math.random() * 28) + 1);
-                var XHR1 = new XMLHttpRequest();
-                XHR1.onreadystatechange = function() {
-                    if (XHR1.readyState == 4) {
-                        if (XHR1.status == 200) {
-                            document.getElementById("meme-view").innerHTML = XHR1.responseText;
+                var XHR2 = new XMLHttpRequest();
+                XHR2.onreadystatechange = function() {
+                    if (XHR2.readyState == 4) {
+                        if (XHR2.status == 200) {
+                            document.getElementById("meme-view").innerHTML = XHR2.responseText;
                         }
                     }
                 }
             }
-            XHR1.open("GET", "memes/" + x + ".png");
-            XHR1.send();
+            XHR2.open("GET", "memes/" + Math.floor((Math.random() * 28) + 1) + ".png");
+            XHR2.send();
         </script>
         <style>
             h1 {color:blue}
