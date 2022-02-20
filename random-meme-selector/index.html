@@ -20,7 +20,7 @@
                 XHR2.onreadystatechange = function() {
                     if (XHR2.readyState == 4) {
                         if (XHR2.status == 200) {
-                            document.getElementById("meme-view").innerHTML = XHR2.responseText;
+                            document.getElementById("meme-view").innerHTML = XHR2.response;
                         }
                     }
                 }
