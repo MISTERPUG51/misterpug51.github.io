@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <style>
+            .navbox-class {
+                display: flex;
+                text-align: center;
+            }
+
+            .navbox-button {
+                background-color:rgb(255, 0, 0);
+                text-align: center;
+                width: 2000px;
+                border: 2px solid black;
+            }
+
+            .navbox-button:hover {
+                transform: translateY(2px);
+                background: greenyellow;
+            }
+        </style>
+        <script>
+            function navbar_button_1_click() {
+                window.location.href = "/";
+            }
+
+            function navbar_button_2_click() {
+                window.location.href = "/random-meme-selector";
+            }
+
+            function navbar_button_3_click() {
+                window.location.href = "/games";
+            }
+        </script>
+    </head>
     <body>
-        <div>
-            <a href="/">Home</a>
-            <br>
-            <a href="/random-meme-selector/">Random Meme Selector</a>
+        <div class="navbox-class">
+            <div class="navbox-button" id="navbox-button-1" onclick="navbar_button_1_click()">
+                Home
+            </div>
+            <div class="navbox-button" id="navbox-button-2" onclick="navbar_button_2_click()">
+                Random Meme Selector
+            </div>
+            <div class="navbox-button" id="navbox-button-3" onclick="navbar_button_3_click()">
+                Games
+            </div>
         </div>
     </body>
 </html>
