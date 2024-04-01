@@ -1,10 +1,31 @@
 <html>
     <head>
         <title>
-            Test
+            MISTERPUG51 - Home
         </title>
     </head>
     <body>
-        Test
+        <div class="row">
+            <div class="column" id="navigation">
+            </div>
+            <div class="column">
+                <h1>
+                    Home
+                </h1>
+                <br>
+                Welcome to my website! It may look a bit dated or bland, but that's because I wrote it by hand. Making a nice website isn't easy!
+            </div>
+        </div>
     </body>
+    <script>
+        var getnavigation = new XMLHttpRequest();
+        getnavigation.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Typical action to be performed when the document is ready:
+                document.getElementById("navigation").innerHTML = getnavigation.responseText;
+            }
+        };
+        getnavigation.open("GET", "filename", true);
+        getnavigation.send();
+    </script>
 </html>
