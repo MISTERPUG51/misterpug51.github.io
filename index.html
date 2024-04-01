@@ -5,27 +5,27 @@
         </title>
     </head>
     <body>
-        <div class="row">
-            <div class="column" id="navigation">
-            </div>
-            <div class="column">
+        <table>
+            <td id="navigation">
+            <td>
                 <h1>
                     Home
                 </h1>
                 <br>
                 Welcome to my website! It may look a bit dated or bland, but that's because I wrote it by hand. Making a nice website isn't easy!
             </div>
-        </div>
+        </table>
+
     </body>
     <script>
-        var getnavigation = new XMLHttpRequest();
-        getnavigation.onreadystatechange = function() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 // Typical action to be performed when the document is ready:
-                document.getElementById("navigation").innerHTML = getnavigation.responseText;
+                document.getElementById("navigation").innerHTML = xhttp.responseText;
             }
         };
-        getnavigation.open("GET", "/navigation.html", true);
-        getnavigation.send();
+        xhttp.open("GET", "/navigation.html", true);
+        xhttp.send();
     </script>
 </html>
