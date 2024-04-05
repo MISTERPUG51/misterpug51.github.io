@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            MISTERPUG51 - Home
+        </title>
+        <link rel="stylesheet" href="/navigationstyle.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="navigation" class="navigation"></td>
+                <td>
+                    <h1>
+                        Programs
+                    </h1>
+                    <br>
+                    Below is a list of the programs I've written
+                    <br>
+                    <br>
+                    <table class="programtable">
+                        <tr>
+                            <td>
+                                Program
+                            </td>
+                            <td>
+                                Platform(s)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="timecalc">
+                                    TimeCALC
+                                </a>
+                            </td>
+                            <td>
+                                TI-82, TI-83
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="tidice">
+                                    TIDICE
+                                </a>
+                            </td>
+                            <td>
+                                TI-82, TI-83, TI-83 Plus, TI-84 Plus, TI-84 Plus CE
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Typical action to be performed when the document is ready:
+                document.getElementById("navigation").innerHTML = xhttp.responseText;
+            }
+        };
+        xhttp.open("GET", "/navigation.html", true);
+        xhttp.send();
+    </script>
+</html>
