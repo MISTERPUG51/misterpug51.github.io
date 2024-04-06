@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            MISTERPUG51 - TIDICE
+        </title>
+        <link rel="stylesheet" href="/navigationstyle.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="navigation" class="navigation"></div>
+                <td>
+                    <h1>
+                        TimeCALC
+                    </h1>
+                    <br>
+                    TIDICE is a simple probability sim program written in TI-BASIC. This program allows you to roll one or two 6-sided virtual dice on your calculator. This program was made for the TI-82, TI-83, TI-83+, TI-84+, and TI-84+ CE, but it may run on other devices. 
+                    <a href="https://github.com/MISTERPUG51/TIDICE">
+                        the Github repository
+                    </a>
+                     for more information.
+                    <br>
+                    <br>
+                    <a href="https://github.com/MISTERPUG51/TIDICE/releases/latest">
+                        <img src="/gif/download.gif">
+                        Download
+                    </a>
+                </div>
+            </tr>
+        </table>
+    </body>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Typical action to be performed when the document is ready:
+                document.getElementById("navigation").innerHTML = xhttp.responseText;
+            }
+        };
+        xhttp.open("GET", "/navigation.html", true);
+        xhttp.send();
+    </script>
+</html>
