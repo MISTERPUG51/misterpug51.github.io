@@ -3,20 +3,45 @@
         <title>
             Home
         </title>
+        <style>
+            body {
+                background-image: url('/images/senad-palic-r7DtdPwxtwk-unsplash.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .bottomtext {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                color:black;
+            }
+            .cloudy-background {
+                background: rgba(255, 255, 255, 0.5);
+            }
+        </style>
     </head>
     <body>
         <div id="navbardiv">
             Loading.
         </div>
         <br>
-        <h1>
-            Home
-        </h1>
-        <p>
-            I couldn't think of much to put here. Most of the stuff that I was going to put here is on the
-            <a href="/about">
-                about page.
-            </a>
+        <div class="cloudy-background">
+            <h1>
+                Home
+            </h1>
+            <p>
+                I couldn't think of much to put here. Most of the stuff that I was going to put here is on the
+                <a href="/about">
+                    about page.
+                </a>
+            </p>
+        </div>
+        
+        <p class="bottomtext cloudy-background" id="bottomtext">
+            Photo by <a href="https://unsplash.com/@senadpalic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Senad Palic</a> on <a href="https://unsplash.com/photos/white-computer-monitor-and-white-computer-keyboard-r7DtdPwxtwk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </p>
     </body>
     <script src="/common-page.js">
