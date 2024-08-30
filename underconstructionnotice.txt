@@ -1,0 +1,7 @@
+<img src="/images/underconstruction.gif">
+        <br>
+        <h2>
+            <p>
+                This website is under construction. You can still browse, but many pages and features may be broken or missing.
+            </p>     
+        </h2>
