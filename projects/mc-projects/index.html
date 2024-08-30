@@ -5,6 +5,9 @@
         </title>
         <link rel="stylesheet" href="/footer.css">
         <style>
+            .main-mc-project-table {
+                width: 100%;
+            }
             .mc-project-table {
               border:1px solid black;
             }
@@ -18,6 +21,8 @@
                 background: rgba(255, 255, 255, 0.5);
             }
         </style>
+        <script src="/projects/mc-projects/retrieve-mc-project-descriptions.js">
+        </script>
     </head>
     <body>
         <div id="navbardiv">
@@ -28,7 +33,7 @@
             Minecraft datapacks and resource packs
         </h1>
         <br>
-        <table class="mc-project-table cloudy-background">
+        <table class="main-mc-project-table mc-project-table cloudy-background">
             <tr class="mc-project-table">
                 <th class="mc-project-table">
                     Name
@@ -37,93 +42,49 @@
                     Type
                 </th>
                 <th class="mc-project-table">
-                    Game Version(s)
-                </th>
-                <th class="mc-project-table">
-                    About
+                    Description
                 </th>
             </tr>
             <tr class="mc-project-table">
                 <td class="mc-project-table">
-                    DyeableConcrete
+                    <a href="/projects/mc-projects/dyeableconcrete">
+                        DyeableConcrete
+                    </a>
                 </td>
                 <td class="mc-project-table">
                     Datapack
                 </td>
                 <td class="mc-project-table">
-                    Java Edition 1.14-1.21.1
-                </td>
-                <td class="mc-project-table">
-                    <p>
-                        DyeableConcrete is a Minecraft datapack for versions 1.14-1.21.1 that lets you dye white concrete and white concrete powder the same way you dye white wool. To dye concrete or concrete powder, put white concrete or white concrete powder in the crafting grid with a dye.
-                        <br>
-                        Visit one of the pages below to download or see more information.
+                    <p id="DyeableConcreteDescription">
                     </p>
-                    <a href="https://modrinth.com/datapack/dyeableconcrete">
-                        View on Modrinth.com
-                    </a>
-                    <br>
-                    <a href="https://www.planetminecraft.com/data-pack/dyeableconcrete/">
-                        View on planetminecraft.com
-                    </a>
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/DyableConcrete">
-                        Github repository
-                    </a>
                 </td>
             </tr>
             <tr class="mc-project-table">
                 <td class="mc-project-table">
-                    CoalDye
+                    <a href="/projects/mc-projects/coaldye">
+                        CoalDye
+                    </a>
                 </td>
                 <td class="mc-project-table">
                     Datapack
                 </td>
                 <td class="mc-project-table">
-                    Java Edition 1.14-1.21.1
-                </td>
-                <td class="mc-project-table">
-                    <p>
-                        CoalDye is a datapack for Minecraft Java Edition. This datapack lets you craft black dye using coal or charcoal. Without this datapack, you can only craft black dye with ink sacs and wither roses.
-                        <br>
-                        Visit one of the pages below to download or see more information.
+                    <p id="CoalDyeDescription">
                     </p>
-                    <a href="https://modrinth.com/datapack/coaldye">
-                        View on Modrinth.com
-                    </a>
-                    <br>
-                    <a href="https://www.planetminecraft.com/data-pack/coaldye/">
-                        View on planetminecraft.com
-                    </a>
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/CoalDye">
-                        Github repository
-                    </a>
                 </td>
             </tr>
             <tr class="mc-project-table">
                 <td class="mc-project-table">
-                    NoMoreOres
+                    <a href="/projects/mc-projects/nomoreores">
+                        NoMoreOres
+                    </a>
                 </td>
                 <td class="mc-project-table">
                     Resource pack
                 </td>
                 <td class="mc-project-table">
-                    Java Edition 1.6.1-1.21.1
-                </td>
-                <td class="mc-project-table">
-                    <p>
-                        NoMoreOres is a simple Minecraft resource pack that replaces all of the ore textures with stone, netherrack, and deepslate. This resource pack makes mining a nightmare and is great for pranking your friends. This resource pack supports all versions from 1.6.1 to 1.21.1
-                        <br>
-                        Visit one of the pages below to download or to see more information.
+                    <p id="NoMoreOresDescription">
                     </p>
-                    <a href="https://modrinth.com/resourcepack/nomoreores">
-                        View on modrinth.com
-                    </a>
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/NoMoreOres">
-                        Github repository
-                    </a>
                 </td>
             </tr>
         </table>
