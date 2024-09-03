@@ -4,14 +4,19 @@
             Programs
         </title>
         <link rel="stylesheet" href="/footer.css">
+        <!-- The prgm-table color class also contains the vertical-align property -->
         <style>
             .main-prgmtable {
                 width: 100%;
             }
             .prgmtable {
-              border:1px solid black;
-              color:black;
-              background: rgba(255, 255, 255, 0.25);
+                border:1px solid black;
+                background: rgba(255, 255, 255, 0.25);
+            }
+            
+            .prgmtable-color {
+                vertical-align: top;
+                color:black;
             }
             body {
                 background-image: url('/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
@@ -22,6 +27,7 @@
             .cloudy-background {
                 background: rgba(255, 255, 255, 0.5);
             }
+
         </style>
     </head>
     <body style="color:white">
@@ -32,54 +38,64 @@
         <h1>
             Programs
         </h1>
-        <table class="main-prgmtable prgmtable">
-            <tr class="prgmtable">
-                <th class="prgmtable">
+        <table class="main-prgmtable prgmtable prgmtable-color">
+            <tr class="prgmtable prgmtable-color">
+                <th class="prgmtable prgmtable-color">
                     Name
                 </th>
-                <th class="prgmtable">
+                <th class="prgmtable prgmtable-color">
                     Platform
                 </th>
-                <th class="prgmtable">
+                <th class="prgmtable prgmtable-color">
                     Description
                 </th>
             </tr>
-            <tr class="prgmtable">
-                <td class="prgmtable">
+            <tr class="prgmtable prgmtable-color">
+                <td class="prgmtable prgmtable-color">
                     <a href="/projects/programs/sticky">
                         Sticky
                     </a>
                 </td>
-                <td class="prgmtable">
-                    Windows
-                    <br>
-                    <img src="/images/windows-logo.png" style="max-height:100%; max-width:100%">
+                <td class="prgmtable prgmtable-color">
+                    <table>
+                        <tr>
+                            <td class="prgmtable-color">
+                                Windows
+                                <br>
+                                <img src="/images/windows-logo.png" style="max-height:100%; max-width:100%">
+                            </td>
+                            <td class="prgmtable-color">
+                                Linux
+                                <br>
+                                <img src="/images/tux.png" style="max-height:100%; max-width:100%">
+                            </td>
+                        </tr>
+                    </table>
                 </td>
-                <td class="prgmtable">
+                <td class="prgmtable prgmtable-color">
                     <p id="StickyDescription">
                         Loading description.
                     </p>
                 </td>
             </tr>
-            <tr class="prgmtable">
-                <td class="prgmtable">
+            <tr class="prgmtable prgmtable-color">
+                <td class="prgmtable prgmtable-color">
                     <a href="/projects/programs/psxcontrollertest">
                         PSXControllerTest
                     </a>
                 </td>
-                <td class="prgmtable">
+                <td class="prgmtable prgmtable-color">
                     PS1
                     <br>
                     <img src="/images/ps1logo.png" style="max-height:100%; max-width:100%">
                 </td>
-                <td class="prgmtable">
+                <td class="prgmtable prgmtable-color">
                     <p id="PSXControllerTestDescription">
                         Loading description.
                     </p>
                 </td>
             </tr>
         </table>
-        
         <p class="footer cloudy-background" id="footer">
             Background photo by <a href="https://unsplash.com/@florianolv?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Florian Olivo</a> on <a href="https://unsplash.com/photos/lines-of-html-codes-4hbJ-eymZ1o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             <br>
