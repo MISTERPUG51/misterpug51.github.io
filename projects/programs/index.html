@@ -5,6 +5,9 @@
         </title>
         <link rel="stylesheet" href="/footer.css">
         <style>
+            .main-prgmtable {
+                width: 100%;
+            }
             .prgmtable {
               border:1px solid black;
               color:black;
@@ -29,7 +32,7 @@
         <h1>
             Programs
         </h1>
-        <table class="prgmtable">
+        <table class="main-prgmtable prgmtable">
             <tr class="prgmtable">
                 <th class="prgmtable">
                     Name
@@ -38,7 +41,7 @@
                     Platform
                 </th>
                 <th class="prgmtable">
-                    About
+                    Description
                 </th>
             </tr>
             <tr class="prgmtable">
@@ -51,19 +54,9 @@
                     <img src="/images/windows-logo.png" style="max-height:100%; max-width:100%">
                 </td>
                 <td class="prgmtable">
-                    <p>
-                        Sticky is a small game I made. The goal of the game is to move a cube through multiple mazes without touching the walls and avoiding other obstacles. Moving the cube is done by using the W, A, S, and D keys.
-                        Currently, the game is only available for Windows PCs, but you can run it on MacOS and Linux using <a href="https://www.winehq.org/">WINE</a>.
+                    <p id="StickyDescription">
+                        Loading description.
                     </p>
-                    For more information, visit the Sticky Github repository.
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/sticky">
-                        Github repository
-                    </a>
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/sticky/releases/latest">
-                    Download
-                </a>
                 </td>
             </tr>
             <tr class="prgmtable">
@@ -76,25 +69,9 @@
                     <img src="/images/ps1logo.png" style="max-height:100%; max-width:100%">
                 </td>
                 <td class="prgmtable">
-                    <p>
-                        PSXControllerTest is a program I made for the original Sony Playstation. This program will tell the user which button they are currently pressing. Only controllers without analog sticks are supported, and the program only reads inputs from controller port 1.
-                        <br>
-                        <br>
-                        I wrote this program to help me familiarize myself with programming for the PSX. As a result, it is very bare-bones.
-                        <br>
-                        <br>
-                        This was written with the help of a tutorial series by <a href="https://github.com/Wituz">Wituz</a>. As a result, some of the code is his (namely constants.h and controller.h). The tutorials can be found <a href="https://www.youtube.com/playlist?list=PLAQybJIBW2UtXJITyUTJipPFxC61Tt-Xv">here</a> and the files for the tutorials are <a href="https://github.com/Wituz/wituz-youtube/tree/master/ps1-game-tutorial">here</a>.
-                        If you want to start programming for the PSX, I recommend taking a look at the <a href="https://www.psxdev.net/">PSXDEV website</a>.
+                    <p id="PSXControllerTestDescription">
+                        Loading description.
                     </p>
-                    For more information, visit the PSXControllerTest Github repository.
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/PSXControllerTest">
-                        Github repository
-                    </a>
-                    <br>
-                    <a href="https://github.com/MISTERPUG51/PSXControllerTest/releases/latest">
-                        Download
-                    </a>
                 </td>
             </tr>
         </table>
@@ -102,9 +79,10 @@
         <p class="footer cloudy-background" id="footer">
             Background photo by <a href="https://unsplash.com/@florianolv?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Florian Olivo</a> on <a href="https://unsplash.com/photos/lines-of-html-codes-4hbJ-eymZ1o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             <br>
-            This page was last updated on 08/27/2024.
+            This page was last updated on 09/03/2024.
         </p>
     </body>
     <script src="/common-page.js">
     </script>
+    <script src="/projects/programs/retrieve-program-descriptions.js"></script>
 </html>
