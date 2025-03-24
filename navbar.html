@@ -6,6 +6,7 @@
         <style>
             .navbar {
                 overflow: hidden;
+                
             }
 
             .navbar a {
@@ -71,10 +72,11 @@
                 Home
             </a>
             <div class="dropdown">
-                <div class="dropbtn" onclick="programsButtonClicked()">
+                <div class="dropbtn">
                     Programs
                 </div>
                 <div class="dropdown-content cloudy-background">
+                    <a href="/programs">All programs</a>
                     <a href="/programs/sticky">Sticky</a>
                     <a href="/programs/crashsdkhelper">CrASH SDK Helper</a>
                     <a href="/programs/psxcontrollertest">PSXControllerTest</a>
@@ -86,9 +88,5 @@
         </div>
     </body>
 
-    <script>
-        function programsButtonClicked() {
-            window.location.href="/programs"
-        }
-    </script>
+    
 </html>
