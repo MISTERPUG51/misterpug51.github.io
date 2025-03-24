@@ -3,39 +3,92 @@
         <title>
             You're not supposed to see this in the title bar
         </title>
+        <style>
+            .navbar {
+                overflow: hidden;
+            }
+
+            .navbar a {
+                float:left;
+                text-align: center;
+                padding: 14px 16px;
+                color: black;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+                border: none;
+                outline: none;
+                padding: 14px 16px;
+                margin: 0;
+                background-color: inherit;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn{
+                background: rgba(255, 255, 255, 0.75);
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                padding:12px 16px;
+                display: block;
+                text-align: left;
+                color: black;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .cloudy-background {
+                background: rgba(255, 255, 255, 0.5);
+            }
+
+
+
+
+
+
+            .blackbackground {
+                background-color: black;
+            }
+
+        </style>
     </head>
-    <body>
-        <table width="100%" class="cloudy-background">
-            <tr>
-                <th>
-                    <a href="/">
-                        <p>
-                            Home
-                        </p>
-                    </a>
-                </th>
-                <th>
-                    <a href="/programs">
-                        <p>
-                            Programs (Apps/games)
-                        </p>
-                    </a>
-                </th>
-                <th>
-                    <a href="/mc">
-                        <p>
-                            Minecraft stuff
-                        </p>
-                    </a>
-                </th>
-                <th>
-                    <a href="/about">
-                        <p>
-                            About me
-                        </p>
-                    </a>
-                </th>
-            </tr>
-        </table>
+    <body class="blackbackground">
+        <div class="navbar cloudy-background">
+            <a href="/">
+                Home
+            </a>
+            <div class="dropdown">
+                <div class="dropbtn" onclick="programsButtonClicked()">
+                    Programs
+                </div>
+                <div class="dropdown-content cloudy-background">
+                    <a href="/programs/sticky">Sticky</a>
+                    <a href="/programs/crashsdkhelper">CrASH SDK Helper</a>
+                    <a href="/programs/psxcontrollertest">PSXControllerTest</a>
+                    <a href="/programs/craftmine">CraftMine</a>
+                </div>
+            </div>
+            <a href="/mc">Minecaft stuff</a>
+            <a href="/about">About me</a>
+        </div>
     </body>
+
+    <script>
+        function programsButtonClicked() {
+            window.location.href="/programs"
+        }
+    </script>
 </html>
