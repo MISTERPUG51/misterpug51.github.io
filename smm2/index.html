@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Super Mario Maker 2 Stuff
+        </title>
+        <link rel="stylesheet" href="/common-page.css">
+        <!-- The prgm-table color class also contains the vertical-align property -->
+        <style>
+            .main-prgmtable {
+                width: 100%;
+            }
+            .prgmtable {
+                border:1px solid black;
+                background: rgba(255, 255, 255, 0.25);
+                vertical-align: top;
+                color:black;
+            }
+            body {
+                background-image: url('/images/smm2/background.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size:cover;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="navbardiv">
+            Loading.
+        </div>
+        <br>
+        <h1 class="cloudy-background">
+            Super Mario Maker 2 Stuff
+        </h1>
+        
+        <div class="cloudy-background">
+            Since there is no official public API for the course world, all the stuff below was entered manually. Since I have to update it manually, the list of courses might not always be up to date. You can see the last time this page was updated at the very bottom of the page. If you want to see my stuff on the course world in game, my maker ID is LRW-4CC-LLF.
+            <br>
+            <br>
+            Sort courses by
+            <select id="sortDropdown" onchange="sortTable(this.value)">
+                <option value="0">Oldest to newest</option>
+                <option value="1" selected>Newest to oldest</option>
+                <option value="2">Name (A-Z)</option>
+            </select>
+        </div>
+        <br>
+        <div id="courseTableDiv">
+            Loading course info, please wait. If this message does not go away after a few seconds, try refreshing the page. If it still happens, you can create a new issue using the "Report a problem" link at the bottom of the page.
+        </div>
+        <p class="footer cloudy-background" id="footer">
+            This page was last updated on 04/10/2025.
+        </p>
+    </body>
+    <script src="/common-page.js">
+    </script>
+    <script src="/scripts/retrieve-course-info.js"></script>
+</html>

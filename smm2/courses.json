@@ -1,0 +1,117 @@
+{
+    "courses" : [
+        {
+            "name": "A Shortcut to Heaven",
+            "id": "63J-3CD-PNG",
+            "date": "20200415",
+            "description": "Hint: Don't expect to win. Good Luck!",
+            "image": "/images/smm2/courses/a_shortcut_to_heaven.jpg"
+        },
+        {
+            "name": "Kill The Goombas",
+            "id": "SGP-9RV-GGG",
+            "date": "20200416",
+            "description": "if you dont know what the superball flower is, look it up before playing.",
+            "image": "/images/smm2/courses/kill_the_goombas.jpg"
+        },
+        
+        {
+            "name": "Multiplayer Race",
+            "id": "8MG-VRW-PRG",
+            "date": "20200523",
+            "description": "A 4 player multiplayer race to the finish.",
+            "image": "/images/smm2/courses/multiplayer_race.jpg"
+        },
+        {
+            "name": "2020 be like",
+            "id": "0JX-JL6-KLG",
+            "date": "20201129",
+            "description": "face mask",
+            "image": "/images/smm2/courses/2020_be_like.jpg"
+        },
+        {
+            "name": "ON/OFF",
+            "id": "SBQ-Y2H-4NF",
+            "date": "20210411",
+            "description": "Hopefully this course is not too easy and not too hard for you. Have fun!",
+            "image": "/images/smm2/courses/on_off.jpg"
+        },
+        {
+            "name": "Sky Scramble",
+            "id": "MNS-QLC-6QG",
+            "date": "20250325",
+            "description": "A scramble in the sky",
+            "image": "/images/smm2/courses/sky_scramble.jpg"
+        },
+        {
+            "name": "Cloud Climb",
+            "id": "2MQ-W05-5WF",
+            "date": "20250326",
+            "description": "",
+            "image": "/images/smm2/courses/cloud_climb.jpg"
+        },
+        {
+            "name": "Cold Cavern",
+            "id": "QP4-DGD-HLF",
+            "date": "20250328",
+            "description": "Don't touch the icicles!",
+            "image": "/images/smm2/courses/cold_cavern.jpg"
+        },
+        {
+            "name": "Airship",
+            "id": "ND8-QWV-GTG",
+            "date": "20250330",
+            "description": "",
+            "image": "/images/smm2/courses/airship.jpg"
+        },
+        {
+            "name": "Dry Dry Desert",
+            "id": "0QN-RR8-MKG",
+            "date": "20250330",
+            "description": "",
+            "image": "/images/smm2/courses/dry_dry_desert.jpg"
+        },
+        {
+            "name": "Desert Goomba Battle",
+            "id": "8S7-3LF-N6G",
+            "date": "20250405",
+            "description": "Just a small goomba battle for my super world",
+            "image": "/images/smm2/courses/desert_goomba_battle.jpg"
+        },
+        {
+            "name": "Desert Depths",
+            "id": "XV1-DPS-7JF",
+            "date": "20250405",
+            "description": "A deep cavern in the depths of the desert",
+            "image": "/images/smm2/courses/desert_depths.jpg"
+        },
+        {
+            "name": "Desert Oasis",
+            "id": "8X3-69H-V5G",
+            "date": "20250406",
+            "description": "An underwater level in the middle of the desert.",
+            "image": "/images/smm2/courses/desert_oasis.jpg"
+        },
+        {
+            "name": "W2 Castle",
+            "id": "63M-Q2S-FHF",
+            "date": "20250406",
+            "description": "The castle for world 2 of my super world.",
+            "image": "/images/smm2/courses/w2_castle.jpg"
+        },
+        {
+            "name": "The Beginning",
+            "id": "D4G-024-N6G",
+            "date": "20250406",
+            "description": "The beginning of Mario's journey",
+            "image": "/images/smm2/courses/the_beginning.jpg"
+        },
+        {
+            "name": "Toadstool Traversal",
+            "id": "DQF-5PP-VFF",
+            "date": "20250406",
+            "description": "",
+            "image": "/images/smm2/courses/toadstool_traversal.jpg"
+        }
+    ]
+}
