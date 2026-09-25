@@ -13,11 +13,11 @@ xhttp.send();
 
 
 //fetch website footer and put it in the footerdiv
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
+var xhttp2 = new XMLHttpRequest();
+xhttp2.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-       document.getElementById("footerdiv").innerHTML = xhttp.responseText;
+       document.getElementById("footerdiv").innerHTML = xhttp2.responseText;
     }
 };
-xhttp.open("GET", "/footercontent.html", true);
-xhttp.send();
+xhttp2.open("GET", "/footercontent.html", true);
+xhttp2.send();
