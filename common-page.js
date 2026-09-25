@@ -20,7 +20,7 @@ navbarHttpRequest.send();
 footerHttpRequest.open("GET", "/footer.html", true);
 footerHttpRequest.send();
 
-//alert("This website is under construction. You can still browse, but many pages and features may be broken or missing.");
+alert("This website is under construction. You can still browse, but many pages and features may be broken or missing.");
 
 
 //This is used for when Programs is clicked on the navigation bar.
