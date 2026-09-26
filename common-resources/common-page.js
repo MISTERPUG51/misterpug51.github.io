@@ -5,7 +5,7 @@ xhttp.onreadystatechange = function() {
        document.getElementById("headerdiv").innerHTML = xhttp.responseText;
     }
 };
-xhttp.open("GET", "/headercontent.html", true);
+xhttp.open("GET", "/common-resources/headercontent.html", true);
 xhttp.send();
 
 
@@ -16,5 +16,5 @@ xhttp2.onreadystatechange = function() {
        document.getElementById("footerdiv").innerHTML = xhttp2.responseText;
     }
 };
-xhttp2.open("GET", "/footercontent.html", true);
+xhttp2.open("GET", "/common-resources/footercontent.html", true);
 xhttp2.send();
